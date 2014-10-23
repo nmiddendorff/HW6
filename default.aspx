@@ -36,7 +36,13 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:nmiddendorff_recipes %>" SelectCommand="SELECT * FROM [nmiddendorff_recipes]"></asp:SqlDataSource>
         <br />
         <br />
-        <br />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" HorizontalAlign="Center" Width="356px">
+            <Columns>
+                <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
+                <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
+                <asp:CommandField ShowSelectButton="True" />
+            </Columns>
+        </asp:GridView>
         <br />
         <br />
     
