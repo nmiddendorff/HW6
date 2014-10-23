@@ -16,9 +16,9 @@
     <div class="collapse navbar-collapse"> 
  <ul class="nav navbar-nav"> 
  <li><a href="./default.aspx">Home</a></li> 
- <li><a href="./newRecipe.aspx">New Recipe</a></li> 
+ <li><a href="./new_Recipe.aspx">New Recipe</a></li> 
  <li><a href="./AboutUs.aspx">About Us</a></li> 
- <li><a href="./ContactUs.aspx">Contact Us</a></li> 
+ <li><a href="./ContactUs2.aspx">Contact Us</a></li> 
  </ul> 
  </div><!--/.nav-collapse --> 
 <!--###################################################################################-->
@@ -40,7 +40,7 @@
             <Columns>
                 <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
                 <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
-                <asp:CommandField ShowSelectButton="True" />
+                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="viewRecipe.aspx?recipeID={0}" Text="Select" />
             </Columns>
         </asp:GridView>
         <br />

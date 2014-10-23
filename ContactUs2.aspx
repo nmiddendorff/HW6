@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ContactUs2.aspx.vb" Inherits="_default" %>
 
 <!DOCTYPE html>
 
@@ -18,7 +18,7 @@
  <li><a href="./default.aspx">Home</a></li> 
  <li><a href="./newRecipe.aspx">New Recipe</a></li> 
  <li><a href="./AboutUs.aspx">About Us</a></li> 
- <li><a href="./ContactUs.aspx">Contact Us</a></li> 
+ <li><a href="./ContactUs2.aspx">Contact Us</a></li> 
  </ul> 
  </div><!--/.nav-collapse --> 
 <!--###################################################################################-->
@@ -36,7 +36,13 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:nmiddendorff_recipes %>" SelectCommand="SELECT * FROM [nmiddendorff_recipes]"></asp:SqlDataSource>
         <br />
         <br />
-        <br />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" HorizontalAlign="Center" Width="356px">
+            <Columns>
+                <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
+                <asp:BoundField DataField="submittedBy" HeaderText="Submitted By" SortExpression="submittedBy" />
+                <asp:CommandField ShowSelectButton="True" />
+            </Columns>
+        </asp:GridView>
         <br />
         <br />
     
