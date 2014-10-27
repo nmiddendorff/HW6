@@ -1,5 +1,5 @@
-.footer{text-align center; font-size small; color #696969; bottom 3px}
-.deleteRecipe{text-align center; colorred; font-styleitalic;}
-.about{text-alignleft; padding30%}
-.header{text-align center; font-size x-large; font-weight bold;}
-.center{text-align center;}
+.footer{text-align: center; font-size: small; color: #696969; bottom: 3px}
+.deleteRecipe{text-align: center; }
+.about{text-align:left; padding:30%}
+.header{text-align: center; font-size: x-large; font-weight: bold;}
+.center{text-align: center;}

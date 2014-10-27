@@ -8,8 +8,20 @@
 
  <link href="./css/css6.css" rel="stylesheet"/> 
 
+    <style type="text/css">
+        #form1 {
+            text-align: center;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+
 </head>
-<body>
+   <body style="background-color: #D2B48C">
+
+  
+     <div class="text-center">
 
   
      <div class="page-header">
@@ -17,7 +29,10 @@
       </div>
          
         <h4 class="caption" style="text-align: center">Using 5 Ingredients of Less!</h4>
+         <div class="text-center">
        <br /><a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp; <a href="New_Recipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp; <a href="AboutUs.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp; <a href="ContactUs2.aspx" style="color: #696969">Contact Us</a>
+
+         </div>
 
     <form id="form1" runat="server">
 
@@ -46,5 +61,6 @@
         <%End If%>
 
     </form>
+     </div>
 </body>
 </html>
